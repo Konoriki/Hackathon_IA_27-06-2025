@@ -8,15 +8,17 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full">
       <Navbar />
-      <main>
-        <Hero />
-        <CO2Calculator />
-        <EcoProfile />
-        <EcoGestes />
-        <Blog />
-      </main>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <main className="w-full max-w-6xl mx-auto">
+          <Hero />
+          <CO2Calculator />
+          <EcoProfile />
+          <EcoGestes />
+          <Blog />
+        </main>
+      </div>
       <Footer />
     </div>
   );
