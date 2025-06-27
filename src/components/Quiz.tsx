@@ -183,7 +183,7 @@ const Quiz = () => {
     <section className="py-12 bg-gradient-to-br from-blabla-green-50 to-blabla-beige-50 rounded-lg shadow-lg my-8">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
-          Quiz Écolo : Quel genre de warrior es-tu ? 🌍
+        Quiz Écolo : T'es Has-Been ou BlaBlaCool ?
         </h2>
 
         {showScore ? (

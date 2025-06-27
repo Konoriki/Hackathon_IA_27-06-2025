@@ -31,10 +31,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Voyagez{' '}
-              <span className="text-blabla-green-600">écologique</span>
-              <br />
-              avec BlaBlaCar
+              Bien arrivée à <span className="text-blabla-green-600">destination</span> ?
             </h1>
             <p className="text-xl text-gray-600 mb-8">
               Rejoignez la plus grande communauté de covoiturage et participez à la
@@ -44,9 +41,9 @@ const Hero = () => {
               <button className="eco-button">
                 Commencer à covoiturer
               </button>
-              <button className="px-6 py-3 bg-white text-blabla-green-600 rounded-lg border-2 border-blabla-green-600 hover:bg-blabla-green-50 transition-colors duration-200">
+              <a href="#calculator" className="px-6 py-3 bg-white text-blabla-green-600 rounded-lg border-2 border-blabla-green-600 hover:bg-blabla-green-50 transition-colors duration-200 text-center">
                 Calculer mon impact
-              </button>
+              </a>
             </div>
           </motion.div>
 
