@@ -78,7 +78,7 @@ const CO2Calculator = () => {
       <div className="max-w-4xl mx-auto">
         <h2 className="section-title text-center">Calculateur d'Impact CO₂</h2>
         <p className="text-center text-gray-600 mb-8">
-          Comparez l'impact environnemental de différents modes de transport
+          Comparez l'impact environnemental de différents modes de transport  
         </p>
 
         <div className="eco-card mb-8">
