@@ -1,4 +1,4 @@
-import { FaMedal, FaTree, FaLeaf } from 'react-icons/fa';
+import { FaMedal, FaTree, FaLeaf, FaShareAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const EcoProfile = () => {
@@ -83,9 +83,10 @@ const EcoProfile = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-12 text-center">
-          <button className="eco-button">
-            Partager Mon Impact
+        <div className="mt-12 flex justify-center">
+          <button className="eco-button text-4xl px-16 py-8 font-bold transform hover:scale-105 transition-transform duration-200 shadow-xl flex items-center justify-center space-x-4">
+            <FaShareAlt className="text-3xl" />
+            <span>Partager Mon Impact</span>
           </button>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaShareAlt } from 'react-icons/fa';
 import logoBlablacar from '../assets/logo-blablacar-05.png';
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <img src={logoBlablacar} alt="BlaBlaCar Logo" className="h-8 w-8 object-contain" />
-              <span className="ml-2 text-xl font-bold text-gray-900">BlaBlaCar Eco</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">BlaBlaCar</span>
             </div>
 
             {/* Desktop menu */}
@@ -34,10 +34,23 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
+
+              <div className="flex items-center space-x-3 ml-4">
+                <button className="px-4 py-2 text-blabla-green-600 hover:text-blabla-green-700 font-medium transition-colors duration-200">
+                  Se connecter
+                </button>
+                <button className="px-4 py-2 bg-blabla-blue-500 text-white font-medium rounded-lg hover:bg-blabla-blue-600 transition-colors duration-200">
+                  S'inscrire
+                </button>
+              </div>
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center">
+            <div className="md:hidden flex items-center space-x-4">
+              <button className="px-4 py-2 bg-blabla-green-500 text-white text-sm font-semibold rounded-full hover:bg-blabla-green-600 transition-colors duration-200 flex items-center">
+                <FaShareAlt className="mr-1" />
+                Partager
+              </button>
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-gray-600 hover:text-gray-900 focus:outline-none"
@@ -69,6 +82,14 @@ const Navbar = () => {
                     {item.label}
                   </a>
                 ))}
+                <div className="flex flex-col space-y-2 mt-4 px-3">
+                  <button className="w-full px-4 py-2 text-blabla-green-600 hover:text-blabla-green-700 font-medium transition-colors duration-200 text-center border border-blabla-green-600 rounded-lg">
+                    Se connecter
+                  </button>
+                  <button className="w-full px-4 py-2 bg-blabla-blue-500 text-white font-medium rounded-lg hover:bg-blabla-blue-600 transition-colors duration-200">
+                    S'inscrire
+                  </button>
+                </div>
               </div>
             </div>
           </div>
