@@ -3,7 +3,7 @@ import { FaCheckCircle, FaLeaf, FaCar, FaThermometerHalf } from 'react-icons/fa'
 import { motion } from 'framer-motion';
 
 const EcoGestes = () => {
-  const [activeChallenge, setActiveChallenge] = useState(0);
+  const [] = useState(0);
 
   const weeklyTips = [
     {
