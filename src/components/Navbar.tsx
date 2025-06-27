@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { FaLeaf, FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logoBlablacar from '../assets/logo-blablacar-05.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <FaLeaf className="h-8 w-8 text-blabla-green-500" />
+              <img src={logoBlablacar} alt="BlaBlaCar Logo" className="h-8 w-8 object-contain" />
               <span className="ml-2 text-xl font-bold text-gray-900">BlaBlaCar Eco</span>
             </div>
 
