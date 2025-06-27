@@ -54,15 +54,23 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Leader mondial du covoiturage
-          </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
-            Depuis 2006, BlaBlaCar révolutionne la mobilité en créant une communauté 
-            de voyageurs engagés. Notre plateforme connecte des millions de personnes, 
-            rendant les voyages plus accessibles, économiques et conviviaux tout en 
-            réduisant significativement leur impact environnemental.
-          </p>
+          <blockquote className="text-4xl font-bold italic mb-6 font-nourd m-6">
+            « Faire Paris-Marseille sans culpabiliser devant un arbre, c’est possible. »
+          </blockquote>
+          <div className="max-w-4xl mx-auto bg-white/90 rounded-xl shadow-eco p-8 text-lg text-gray-800 leading-relaxed border-l-8 border-blabla-green-500">
+            <p className="mb-6">
+              Chez <span className="font-bold text-blabla-green-600">BlaBlaCar</span>, nous croyons qu’il est possible de voyager loin sans alourdir son empreinte carbone. <span className="font-semibold text-blabla-green-700">Chaque trajet partagé</span>, chaque siège occupé, chaque rencontre sur la route contribue à réduire l’impact environnemental des transports.
+            </p>
+            <p className="mb-6">
+              <span className="font-bold text-blabla-blue-600">Leader mondial du covoiturage</span>, BlaBlaCar transforme chaque déplacement en un geste concret pour la planète : <span className="font-semibold text-blabla-green-700">moins de voitures vides</span>, moins d’émissions de CO₂, plus de convivialité et d’économies pour tous.
+            </p>
+            <p className="mb-6">
+              En choisissant BlaBlaCar, vous rejoignez une <span className="font-bold text-blabla-green-600">communauté engagée</span> qui réinvente la mobilité : plus solidaire, plus responsable, plus durable. Ensemble, faisons du covoiturage le moteur d’une transition écologique ambitieuse et accessible à tous.
+            </p>
+            <p className="text-right font-semibold text-blabla-green-700">
+              Parce qu’aujourd’hui, voyager malin, c’est aussi voyager plus vert.
+            </p>
+          </div>
         </motion.div>
 
         {/* Stats Section */}
