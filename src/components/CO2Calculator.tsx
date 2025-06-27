@@ -116,7 +116,7 @@ const CO2Calculator = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
-          {Object.entries(totalEmissions).map(([key, value], index) => {
+          {Object.entries(totalEmissions).map(([key, value]) => {
             const icons = {
               carSolo: <FaCar />,
               carShared: <FaUsers />,
