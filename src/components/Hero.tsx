@@ -57,7 +57,7 @@ const Hero = () => {
           <blockquote className="text-4xl font-bold italic mb-6 font-nourd m-6">
             « Faire Paris-Marseille sans culpabiliser devant un arbre, c’est possible. »
           </blockquote>
-          <div className="max-w-4xl mx-auto bg-white/90 rounded-xl shadow-eco p-8 text-lg text-gray-800 leading-relaxed border-l-8 border-blabla-green-500">
+          <div className="max-w-4xl mx-auto bg-white/90 rounded-xl shadow-eco p-8 text-lg text-gray-800 leading-relaxed border-l-8 border-blabla-green-300">
             <p className="mb-6">
               Chez <span className="font-bold text-blabla-green-600">BlaBlaCar</span>, nous croyons qu’il est possible de voyager loin sans alourdir son empreinte carbone. <span className="font-semibold text-blabla-green-700">Chaque trajet partagé</span>, chaque siège occupé, chaque rencontre sur la route contribue à réduire l’impact environnemental des transports.
             </p>
