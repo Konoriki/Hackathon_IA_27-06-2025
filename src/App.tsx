@@ -16,8 +16,8 @@ function App() {
           <Hero />
           <Quiz />
           <CO2Calculator />
-          <EcoProfile />
           <EcoGestes />
+          <EcoProfile />
           <Blog />
         </main>
       </div>

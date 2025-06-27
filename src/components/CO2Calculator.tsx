@@ -76,7 +76,7 @@ const CO2Calculator = () => {
   return (
     <section id="calculator" className="py-20 px-4 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="section-title text-center">Calculateur d'Impact CO₂</h2>
+        <h2 className="section-title text-center">Calcul ton Impact CO₂</h2>
         <p className="text-center text-gray-600 mb-8">
           Comparez l'impact environnemental de différents modes de transport  
         </p>

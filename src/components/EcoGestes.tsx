@@ -50,11 +50,11 @@ const EcoGestes = () => {
   ];
 
   return (
-    <section id="ecogestes" className="py-20 px-4 bg-gray-50">
+    <section id="ecogestes" className="py-20 px-4 ">
       <div className="max-w-4xl mx-auto">
         <h2 className="section-title text-center">Écogestes BlaBla</h2>
         <p className="text-center text-gray-600 mb-12">
-          Découvrez nos conseils pour une conduite plus écologique
+          Découvre nos conseils pour une conduite plus écologique
         </p>
 
         {/* Weekly Tips */}
