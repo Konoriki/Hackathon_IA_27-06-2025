@@ -23,44 +23,66 @@ const Hero = () => {
   return (
     <section id="home" className="relative bg-gradient-to-b from-blabla-green-50 to-white pt-32 pb-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Bien arrivée à <span className="text-blabla-green-600">destination</span> ?
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Rejoignez la plus grande communauté de covoiturage et participez à la
-              réduction de l'empreinte carbone des transports.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="eco-button">
-                Commencer à covoiturer
-              </button>
-              <a href="#calculator" className="px-6 py-3 bg-white text-blabla-green-600 rounded-lg border-2 border-blabla-green-600 hover:bg-blabla-green-50 transition-colors duration-200 text-center">
-                Calculer mon impact
-              </a>
-            </div>
-          </motion.div>
+        {/* Hero Section */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            Bien arrivée à <span className="text-blabla-green-600">destination</span> ?
+          </h1>
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            Rejoignez la plus grande communauté de covoiturage et participez à la
+            réduction de l'empreinte carbone des transports.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <button className="eco-button">
+              Commencer à covoiturer
+            </button>
+            <a href="#calculator" className="px-6 py-3 bg-white text-blabla-green-600 rounded-lg border-2 border-blabla-green-600 hover:bg-blabla-green-50 transition-colors duration-200 text-center">
+              Calculer mon impact
+            </a>
+          </div>
+        </motion.div>
 
-          {/* Right Column - Stats */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-8"
-          >
+        {/* About BlaBlaCar Section */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Leader mondial du covoiturage
+          </h2>
+          <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
+            Depuis 2006, BlaBlaCar révolutionne la mobilité en créant une communauté 
+            de voyageurs engagés. Notre plateforme connecte des millions de personnes, 
+            rendant les voyages plus accessibles, économiques et conviviaux tout en 
+            réduisant significativement leur impact environnemental.
+          </p>
+        </motion.div>
+
+        {/* Stats Section */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-center"
+        >
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            BlaBlaCar en quelques chiffres
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
                 className="eco-card text-center"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 + index * 0.2 }}
+                transition={{ delay: 0.6 + index * 0.2 }}
               >
                 <div className="text-3xl text-blabla-green-500 mb-4 flex justify-center">
                   {stat.icon}
@@ -73,8 +95,8 @@ const Hero = () => {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
 
         {/* Wave Decoration */}
         <div className="absolute bottom-0 left-0 right-0">
