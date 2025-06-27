@@ -20,7 +20,7 @@ const EcoProfile = () => {
   return (
     <section id="profile" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="section-title text-center">Votre Profil Éco-Conducteur</h2>
+        <h2 className="section-title text-center">Ton Profil Éco-Conducteur</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Score and Level Card */}
